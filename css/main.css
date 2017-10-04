@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/georgia.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Circe-Bold';
+    src: url('../fonts/Circe-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  color: #2b2e35;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.large {
+	font-size: 115%;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  table-layout: fixed;
+}
+
+.container {
+	max-width: 1003px;
+	margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.footer {
+  display: table-footer-group;
+  height: 1%;
+}
+
+.btn {
+	display: inline-block;
+	color: #ffffff;
+	background-color: #ff621f;
+	border-bottom: 4px solid #ff332a;
+	font-size: 30px;
+	font-weight: 700;
+	padding: .8em 1.3em .8em 2em;
+	text-transform: none;
+}
+
+header {
+	padding: 2.5em 0 0;
+	margin-bottom: 4em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.brand-caption {
+	color: #18374b;
+	font-size: 2.7rem;
+	border-bottom: 4px solid #000000;
+	padding-bottom: 0.9em;
+}
+
+.first-booking {
+	font-family: Circe;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 4em;
+}
+
+.first-booking h1 {
+	color: #ff621f;
+	font-size: 3.4rem;
+	margin-bottom: 1.5em;
+}
+
+.first-booking-info {
+	font-size: 3rem;
+	color: #020001;
+	margin-bottom: .83em;
+}
+
+.info {
+	height: 1300px;
+	margin-bottom: 49px;
+}
+
+.info-left,
+.info-right {
+	width: 50%;
+	min-height: 100%;
+	padding: 38px 30px 0;
+}
+
+.info-left {
+	float: left;
+	background-color: #ff621f;
+	color: #ffffff;
+}
+
+.info-right {
+	float:right;
+	background-color: #eaeaea;
+}
+
+.webinar-date{
+	text-align: left;
+	margin-bottom: 65px;
+}
+
+.webinar-date-picture {
+	float: left;
+	width: 30%;
+	height: 124px;
+	background-color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+}
+
+.webinar-date-picture .month {
+	display: inline-block;
+	width: 100%;
+	background-color: #000000;
+	font-size: 2.2rem;
+}
+
+.webinar-date-picture .day {
+	color: #c2c2c2;
+	font-size: 7.3rem;
+    line-height: 1.35;
+}
+
+.webinar-date-info {
+	text-transform: uppercase;
+	font-weight: 700;
+	float: right;
+	width: 63%;
+	line-height: 1.1;
+}
+
+.webinar-date-info .day {
+	font-size: 3rem;
+}
+
+.webinar-date-info .number {
+	font-size: 3.6rem;
+	padding-bottom: 0.25em;
+	border-bottom: 2px dashed #ffffff;
+	margin-bottom: 0.5em;
+}
+
+.webinar-date-info .time {
+	font-size: 2.4rem;
+}
+
+.webinar-speaker-photo {
+	width: 191px;
+	height: 191px;
+	margin: 0 auto 30px;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.webinar-speaker-caption {
+	font-size: 2.2rem;
+	font-style: italic;
+	margin-bottom: 1.9rem;
+}
+
+.webinar-speaker-name {
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 42px;
+}
+
+.webinar-speaker-info {
+	font-size: 1.8rem;
+}
+
+.webinar-speaker-info li {
+	margin-bottom: 30px;
+	text-align: left;
+	list-style-type: disc;
+}
+
+.counter-heading,
+.programm-heading {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.counter-heading {
+	font-size: 2.1rem;
+	margin-bottom: 15px;
+}
+
+.programm-heading {
+	font-size: 2.4rem;
+	margin-bottom: 60px;
+}
+
+.counter-block {
+	padding-left: 0;
+	width: 75%;
+	margin: auto;
+	font-family: Circe;
+	font-weight: 700;
+	margin-bottom: 39px;
+}
+
+.counter-block li {
+	display: inline-block;
+	width: 24%;
+}
+
+.counter-block .number {
+	display: block;
+	width: 70px;
+	margin: 0 auto 10px;
+	height: 70px;
+	line-height: 70px;
+	color: #ffffff;
+	font-family: Circe;
+	font-size: 4.8rem;
+	text-transform: uppercase;
+	background-color: #2b2e35;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.counter-block .caption {
+	display: block;
+	width: 100%;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.webinar-programm ul {
+	font-size: 2.4rem;
+	padding-left: 0;
+}
+
+.webinar-programm li {
+	margin-bottom: 35px;
+	text-align: left;
+	position: relative;
+	padding-left: 40px;
+}
+
+.webinar-programm li:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 21px;
+	height: 17px;
+	background-image: url(../images/check.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	     -o-background-size: 100%;
+	        background-size: 100%;
+}
+
+.auditorium-format {
+	width: 60%;
+	margin: 0 auto 50px;
+	font-size: 2.4rem;
+	font-style: italic;
+}
+
+.auditorium-heading {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #ff621f;
+	font-size: 3.6rem;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+
+.auditorium {
+	border-bottom: 2px dashed #2b2e35;
+	margin-bottom: 60px;
+}
+
+.auditorium-info {
+	display: inline-block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 3.6rem;
+	padding-bottom: .5em; 
+}
+
+.promotion-heading {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+
+.promotion-text {
+	font-size: 2.4rem;
+}
+
+.promotion-text strong {
+	font-size: 2.7rem;
+}
+
+.gallery {
+	padding: 30px 0;
+}
+
+.last-booking-motivation {
+	font-size: 3.6rem;
+	margin-bottom: 60px;
+}
+
+.last-booking-text {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.last-booking-btn {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.socials {
+	text-align: center;
+	padding-left: 0;
+}
+.socials li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/socials.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.socials li > a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.socials li.vk {
+	background-position: 0 0;
+}
+
+.socials li.fb {
+	background-position: -30px 0;
+}
+
+.socials li.tw {
+	background-position: -60px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 566px;
+	}
+	header .container {
+		max-width: 100%;
+	}
+	.info {
+		height: auto;
+		margin-bottom: 25px;
+	}
+	.info-left,
+	.info-right {
+		width: 100%;
+		float: none;
+		padding: 19px 15px;
+	}
+	.auditorium-format {
+		width: 100%;
+	}
+	.auditorium-info {
+		width: 100%;
+	}
+	.last-booking-btn {
+	    padding: 15px 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		max-width: 90%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.first-booking h1 {
+		font-size: 2.4rem;
+	}
+	.first-booking-info {
+		font-size: 2rem;
+	}
+	.btn {
+		font-size: 2rem;
+	}
+	.counter-block .number {
+	    width: 50px;
+	    height: 50px;
+	    line-height: 50px;
+    }
+    .counter-block .caption {
+    	font-size: 1rem;
+    }
+    .programm-heading {
+    	font-size: 2rem;
+    	margin-bottom: 30px;
+    }
+    .counter-heading {
+    	font-size: 1.7rem;
+    }
+    .webinar-programm ul {
+	    font-size: 1.8rem;
+	}
+	.webinar-programm li {
+		margin-bottom: 25px;
+	}
+	.webinar-date {
+		margin-bottom: 35px;
+	}
+	.webinar-speaker-info li{
+		margin-bottom: 15px;	
+	}
+	.auditorium-heading,
+	.auditorium-info,
+	.promotion-heading,
+	.last-booking-motivation {
+		font-size: 2.4rem;
+	}
+	.promotion-text {
+		font-size: 1.8rem;
+	}
+	.promotion-text strong,
+	.last-booking-text {
+	    font-size: 2.1rem;
+	}
+	.last-booking-motivation,
+	.last-booking-text {
+		margin-bottom: 30px;
+	}
+}
+
