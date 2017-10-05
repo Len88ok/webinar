@@ -30,18 +30,13 @@
                            <div class="first-booking-info">
                                10 ШАГОВ К СОЗДАНИЮ «САМОРАЗВИВАЮЩЕЙСЯ КОМПАНИИ»  (ВКЛЮЧАЯ СВОБОДУ, КАК УПРАВЛЯТЬ 3 КОМПАНИЯМИ  И ПРОЙТИ IRONMAN)
                            </div>
-                           <div class="btn first-booking-btn">Забронировать место! >></div>
+                           <div class="btn first-booking-btn"><a href="#">Забронировать место! >></a></div>
                     </section>
                     <section class="info clearfix">
                         <div class="info-right text-center">
                             <div class="counter">
                                 <div class="counter-heading">До старта трансляции осталось…</div>
-                                <ul class="counter-block">
-                                    <li><span class="number">0</span><span class="caption">дней</span></li>
-                                    <li><span class="number">0</span><span class="caption">часов</span></li>
-                                    <li><span class="number">0</span><span class="caption">минут</span></li>
-                                    <li><span class="number">0</span><span class="caption">секунд</span></li>
-                                </ul>
+                                <ul class="counter-block"></ul>
                             </div> 
                             <div class="webinar-programm">
                                 <div class="programm-heading">Вот всего лишь малая часть из того,  что ты узнаешь на вебинаре:</div>
@@ -102,12 +97,14 @@
                         </div>                    
                     </section>
                 </div>
-                <section class="promotion">
-                    <div class="container">
-                        <div class="promotion-heading">
+                <section class="promotion">                    
+                    <div class="promotion-heading">
+                        <div class="container">
                             Наконец-то, раскрыта технология как предпринимателю управлять прибыльным бизнесом (и даже не одним), при этом оставаясь свободным, здоровым и довольным жизнью, без стресса и необходимости жить на работе! 
                         </div>
-                        <div class="promotion-text">
+                    </div>
+                    <div class="promotion-text">
+                        <div class="container">
                             <p>Представьте, как Вы <strong>с удовольствием просыпаетесь утром</strong> и с самых первых минут дня точно знаете, что нужно делать сегодня, чтобы сделать ваш бизнес еще более прибыльным…  </p>
                             <p>За утренним кофе Вы смотрите статистику по продажам и <strong>с чувством гордости видите</strong>, что по сравнению с прошлым месяцем она выросла значительно, так как</p>
                             <p>Вы внедрили новые системы в продажах и маркетинге…   Вы <strong>с нетерпением ждете встречи с Вашей командой</strong>, чтобы обсудить новый способы давать больше ценности вашим клиентам и мотивировать их возвращаться к вам чаще и чаще.</p>
@@ -135,7 +132,7 @@
                     <div class="last-booking-text">
                         Приходите на мой вебинар и раскрою вам свою технология в деталях.   
                     </div>
-                    <div class="btn last-booking-btn">Да! Забронировать место сейчас! >></div>
+                    <div class="btn last-booking-btn"><a href="#">Да! Забронировать место сейчас! >></a></div>
                 </section>
             </main>        
             <footer>
@@ -147,5 +144,19 @@
             </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/dscountdown.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.counter-block').dsCountDown({
+                    startDate: new Date("October 5, 00:52:30"),
+                    endDate: new Date("October 7, 00:00:00"),
+                    theme: 'custome',
+                    titleDays: 'Дни',
+                    titleHours: 'Часы',
+                    titleMinutes: 'Минуты',
+                    titleSeconds: 'Секунды'
+                });
+            });
+        </script>
     </body>
 </html>

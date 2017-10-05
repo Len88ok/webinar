@@ -49,6 +49,14 @@ li {
 	list-style-type: none;
 }
 
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 .large {
 	font-size: 115%;
 }
@@ -260,12 +268,13 @@ header {
 	margin-bottom: 39px;
 }
 
-.counter-block li {
+.counter-block .ds-element {
 	display: inline-block;
 	width: 24%;
+	position: relative;
 }
 
-.counter-block .number {
+.counter-block .ds-element-value {
 	display: block;
 	width: 70px;
 	margin: 0 auto 10px;
@@ -280,11 +289,13 @@ header {
 	        border-radius: 5px;
 }
 
-.counter-block .caption {
+.counter-block .ds-element-title {
 	display: block;
 	width: 100%;
 	font-size: 1.4rem;
-	text-transform: uppercase;
+	text-transform: uppercase;	    
+    position: absolute;
+    bottom: -15px;
 }
 
 .webinar-programm ul {
@@ -347,10 +358,18 @@ header {
 .promotion-heading {
 	font-size: 3.6rem;
 	font-weight: 700;
+	background-color: #f8f8f8;
+	padding: .5em 0;
 }
 
 .promotion-text {
 	font-size: 2.4rem;
+	background-image: url(../images/bg1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 }
 
 .promotion-text strong {
@@ -359,11 +378,17 @@ header {
 
 .gallery {
 	padding: 30px 0;
+	background-image: url(../images/bg2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 }
 
 .last-booking-motivation {
 	font-size: 3.6rem;
-	margin-bottom: 60px;
+	margin: 30px 0 60px;
 }
 
 .last-booking-text {
@@ -454,12 +479,13 @@ header {
 	.btn {
 		font-size: 2rem;
 	}
-	.counter-block .number {
+	.counter-block .ds-element-value {
 	    width: 50px;
 	    height: 50px;
 	    line-height: 50px;
+	    font-size: 2.4rem;
     }
-    .counter-block .caption {
+    .counter-block .ds-element-title {
     	font-size: 1rem;
     }
     .programm-heading {
@@ -496,7 +522,17 @@ header {
 	}
 	.last-booking-motivation,
 	.last-booking-text {
-		margin-bottom: 30px;
+		margin: 30px 0;
+	}
+	.webinar-date-picture .day {
+	    font-size: 6rem;
+	    line-height: 1.5;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.btn {
+		font-size: 1.5rem;
 	}
 }
 
